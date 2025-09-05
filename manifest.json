@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Mode sombre + inversion",
+  "version": "1.0",
+  "description": "Active un mode sombre personnalisé et/ou l'inversion des couleurs",
+  "permissions": ["storage", "tabs", "<all_urls>"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": ["dark.css", "invert.css"]
+}
