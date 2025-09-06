@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Mode sombre + inversion",
-  "version": "1.0",
-  "description": "Active un mode sombre personnalisé et/ou l'inversion des couleurs",
-  "permissions": ["storage", "tabs", "<all_urls>"],
+  "name": "Dark-mode&videos-blocking",
+  "version": "1.1",
+  "description": "Active un mode sombre personnalisé et/ou l'inversion des couleurs. Permets aussi de bloquer le chargement ou l'autoplay de vidéos",
+  "permissions": ["storage", "tabs"],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "icon48.png"
