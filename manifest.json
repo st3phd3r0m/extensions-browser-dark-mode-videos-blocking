@@ -1,18 +1,28 @@
 {
   "manifest_version": 2,
   "name": "Dark-mode&videos-blocking",
-  "version": "1.1",
-  "description": "Active un mode sombre personnalisé et/ou l'inversion des couleurs. Permets aussi de bloquer le chargement ou l'autoplay de vidéos",
+  "version": "1.0.1",
+  "description": "Enables a custom dark mode and/or color inversion. Also allows blocking video loading or autoplay.",
   "permissions": ["storage", "tabs"],
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon": "icon48.png"
+    "default_icon": "icon48.png",
+    "default_title": "Dark-mode&videos-blocking",
+    "browser_style": true,
+    "theme_icons": [
+      {
+        "light": "icon48.png",
+        "dark": "icon48-dark.png",
+        "size": 48
+      }
+    ],
+    "show_matches": ["<all_urls>"]
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
-      "run_at": "document_idle"
+      "css": ["dark.css", "invert.css"]
     }
   ],
   "web_accessible_resources": ["dark.css", "invert.css"]
