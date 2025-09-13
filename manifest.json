@@ -18,5 +18,12 @@
       "css": ["dark.css", "invert.css"]
     }
   ],
-  "web_accessible_resources": ["dark.css", "invert.css"]
+  "web_accessible_resources": ["dark.css", "invert.css"],
+  "browser_specific_settings": {
+    "gecko": {
+        "data_collection_permissions": {
+          "required": ["none"]
+         }
+      }
+  }
 }
