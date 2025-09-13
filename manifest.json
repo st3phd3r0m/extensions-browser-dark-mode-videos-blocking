@@ -9,13 +9,6 @@
     "default_icon": "icon48.png",
     "default_title": "Dark-mode&videos-blocking",
     "browser_style": true,
-    "theme_icons": [
-      {
-        "light": "icon48.png",
-        "dark": "icon48-dark.png",
-        "size": 48
-      }
-    ],
     "show_matches": ["<all_urls>"]
   },
   "content_scripts": [
