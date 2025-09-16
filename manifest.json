@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Dark-mode&videos-blocking",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Enables a custom dark mode and/or color inversion. Also allows blocking video loading or autoplay.",
   "permissions": ["storage", "tabs"],
   "browser_action": {
